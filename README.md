@@ -1,6 +1,6 @@
 # WebArtFast
 
-**WebArtFast** is a simple web app creator that supports Docker. (Docker don't work(For now))
+**WebArtFast** is a simple web app creator that supports Docker.
 
 ## Getting Started
 
