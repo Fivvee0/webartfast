@@ -6,7 +6,7 @@ COPY website/ ./website
 COPY docker/ ./docker
 COPY components/ ./components
 
-RUN pip install -r docker/requirements.txt
+RUN pip install --no-cache-dir -r docker/requirements.txt
 
 EXPOSE 80
 
