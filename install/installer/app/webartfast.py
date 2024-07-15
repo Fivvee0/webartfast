@@ -1,6 +1,6 @@
 import argparse
 import os
-import zipfile
+import shutil
 
 def main():
     parser = argparse.ArgumentParser(description='Tool for creating web apps.')
@@ -13,18 +13,18 @@ def main():
     args = parser.parse_args()
 
     if args.command == 'create':
-        create_website(args.name, args.dir)
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        template_dir = os.path.join(script_dir, 'template')
 
-def create_website(name, output_dir):
+        create_website(args.name, args.dir, template_dir)
+
+def create_website(name, output_dir, template_dir):
     app_dir = os.path.join(output_dir, name)
     os.makedirs(app_dir, exist_ok=True)
 
-    template_zip_path = 'template.zip'
+    shutil.copytree(template_dir, app_dir, dirs_exist_ok=True)
 
-    with zipfile.ZipFile(template_zip_path, 'r') as zip_ref:
-        zip_ref.extractall(app_dir)
-
-    print(f'Utworzono aplikację webową o nazwie: {name} w katalogu: {app_dir} z plikami z {template_zip_path}.')
+    print(f'Created Web App: {name} in directory: {app_dir}.')
 
 if __name__ == '__main__':
     main()
