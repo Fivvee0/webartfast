@@ -1,1 +1,1 @@
-# webartfast
+webartfast is a simple web app creator that supports docker

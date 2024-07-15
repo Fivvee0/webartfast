@@ -24,7 +24,7 @@ def create_website(name, output_dir):
     with zipfile.ZipFile(template_zip_path, 'r') as zip_ref:
         zip_ref.extractall(app_dir)
 
-    print(f'Utworzono aplikację webową o nazwie: {name} w katalogu: {app_dir} z plikami z {template_zip_path}.')
+    print(f'Created app: {name} in directory: {app_dir}.')
 
 if __name__ == '__main__':
     main()
