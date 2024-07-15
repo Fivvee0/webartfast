@@ -1,0 +1,4 @@
+ITS VERY IMPORTANT DON'T EXTRACT template.zip
+
+To create a web app with webartfast you need to run this command:
+python webartfast.py --name (name) --dir (directory)

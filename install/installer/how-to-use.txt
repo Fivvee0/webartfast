@@ -1,0 +1,5 @@
+VERY IMPORTANT you need to have python installed
+
+On windows run install.bat
+On linux/MacOS run in shell chmod +x install.sh then ./install.sh
+to install all libraries and create a web app
