@@ -1,9 +1,29 @@
-webartfast is a simple web app creator that supports docker
+# WebArtFast
 
-to start using this program just download installator and open it jus like i said in how-to-use.txt
-then you need add a name a a directory where you wanna your project
-then you go into your project and like i said in how-to-use-web.txt
-then you go into /app and turn on server like i said in instruction.txt
-then you can start editing /website/style.app.css and /website/app.js
+**WebArtFast** is a simple web app creator that supports Docker.
 
-how to use docker? just go into /app(in project) and read instruction.txt
+## Getting Started
+
+To get started with WebArtFast, follow these steps:
+
+1. **Download the Installer**  
+   Download the installer and open it as described in `how-to-use.txt`.
+
+2. **Create Your Project**  
+   - Add a name for your project.
+   - Specify the directory where you want your project to be created.
+
+3. **Navigate to Your Project**  
+   Follow the instructions in `how-to-use-web.txt` to set up your project.
+
+4. **Start the Server**  
+   Go to the `/app` directory and start the server, as outlined in `instruction.txt`.
+
+5. **Edit Your Files**  
+   You can begin editing the following files:
+   - `/website/style.app.css`
+   - `/website/app.js`
+
+## Using Docker
+
+To use Docker, simply navigate to the `/app` folder within your project and refer to `instruction.txt` for detailed instructions.
