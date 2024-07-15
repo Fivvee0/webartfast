@@ -6,9 +6,7 @@ Run in shell: chmod +x run.sh
 Run in shell: ./run.sh
 
 For Docker build:
-Run /docker-builder/build/build.*
-*.bat for Windows users .sh for Linux users
+Run in cmd/shell: docker build -t name .
 
 For Docker run:
-Run /docker-builder/run/run.*
-*.bat for Windows users .sh for Linux users
+Run in cmd/shell: docker run -p 80:80 name
