@@ -1,5 +1,0 @@
-1.You need to run /app/run.* (Check /app/instruction.txt)
-2.You can edit /website/app.js and /website/style.app.js
-3.You can see your website on localhost
-4.You can add your own components to /components
-5.You can build your app and deploy it on docker
