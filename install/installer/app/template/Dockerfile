@@ -2,12 +2,10 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY website/ ./website
+COPY python/ ./python
+COPY components/ ./components
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r python/requirements.txt
 
-COPY . .
-
-EXPOSE 80
-
-CMD ["python", "app.py"]
+CMD ["python", "python/main.py"]
