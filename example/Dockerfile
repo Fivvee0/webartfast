@@ -8,4 +8,6 @@ COPY components/ ./components
 
 RUN pip install -r python/requirements.txt
 
+EXPOSE 80
+
 CMD ["python", "python/main.py"]
