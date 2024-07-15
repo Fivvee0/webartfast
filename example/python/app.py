@@ -3,8 +3,8 @@ import os
 
 app = Flask(__name__)
 
-WEBSITE_DIR = './website'
-COMPONENTS_DIR = './components'
+WEBSITE_DIR = '../website'
+COMPONENTS_DIR = '../components'
 
 @app.route('/')
 def home():
