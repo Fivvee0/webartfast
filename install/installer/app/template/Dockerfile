@@ -2,12 +2,12 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY website/ ./website
-COPY docker/ ./docker
-COPY components/ ./components
+COPY website/ /website
+COPY components/ /components
+COPY docker/ /app
 
-RUN pip install -r docker/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
 EXPOSE 80
 
-CMD ["python", "docker/app.py"]
+CMD ["python", "/app/app.py"]
