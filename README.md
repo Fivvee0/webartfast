@@ -17,7 +17,7 @@ To get started with WebArtFast, follow these steps:
    Follow the instructions in `how-to-use-web.txt` to set up your project.
 
 4. **Start the Server**  
-   Go to the `/app` directory and start the server, as outlined in `instruction.txt`.
+   Go to the `/app` directory in your project and start the server, as outlined in `instruction.txt`.
 
 5. **Edit Your Files**  
    You can begin editing the following files:
